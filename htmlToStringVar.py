@@ -10,7 +10,7 @@ def fileRead():
 def fileWrite(varName, htmlList):
 	f = open("output.txt", "w")
 
-	f.write('let ' + varName + ';')
+	f.write('let ' + varName + ' = \'\';')
 	f.write("\n")
 	for html in htmlList:
 		if html is not None:
