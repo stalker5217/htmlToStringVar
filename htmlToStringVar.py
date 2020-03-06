@@ -14,7 +14,7 @@ def fileWrite(varName, htmlList):
 	f.write("\n")
 	for html in htmlList:
 		if html is not None:
-			f.write(varName + ' +=\'' + html + '\';')
+			f.write(varName + ' += \'' + html + '\';')
 			f.write("\n")
 	f.close()
 
