@@ -1,6 +1,6 @@
 # html 읽어오기
 def fileRead():
-	f = open("input.txt", "r")
+	f = open("rsc/input.txt", "r")
 	htmlList = f.read().split('\n')
 	f.close()
 	
@@ -8,7 +8,7 @@ def fileRead():
 
 # 변수화
 def fileWrite(varName, htmlList):
-	f = open("output.txt", "w")
+	f = open("rsc/output.txt", "w")
 
 	f.write('let ' + varName + ' = \'\';')
 	f.write("\n")
@@ -18,9 +18,7 @@ def fileWrite(varName, htmlList):
 			f.write("\n")
 	f.close()
 
-def main():
+if __name__ == '__main__':
 	varName = 'html'
 	htmlList = fileRead()
 	fileWrite(varName, htmlList)
-
-main()
