@@ -1,4 +1,4 @@
-# html to string
+# HTML source to string variable
 
 innerHtml 속성을 많이 사용하는 코드에서, 수십 수백줄의 html 태그를 js 변수로 만드는게 힘들어서 만들었습니다.  
 
